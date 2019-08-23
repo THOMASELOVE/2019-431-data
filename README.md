@@ -1,5 +1,9 @@
 # 2019-431-data
 
-Data and R Code repository for PQHS/CRSP/MPHP 431 in Fall 2019.
+This is the repository for Data and Code for PQHS 431/CRSP 431/MPHP 431, Section 1.
+
+To obtain all of the data and code in this repository in a single zip file, click on the green button reading Clone or download, and click on Download ZIP.
+
+Or, to download a single file, click on the file you want to download to view its contents, and then in the top right, right click (on Windows, on a Mac, use Control-Click) on the Raw button, and then save the plain text file that results to your computer.
 
 The main website for the course is https://github.com/THOMASELOVE/2019-431.
