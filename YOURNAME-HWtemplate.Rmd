@@ -1,0 +1,44 @@
+---
+title: "YOUR NAME: Homework X for 431"
+author: "INSERT YOUR NAME HERE"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    toc: yes
+    code_folding: show
+---
+
+```{r setup, message=FALSE}
+knitr::opts_chunk$set(comment=NA)
+options(width = 70)
+```
+
+## Load necessary packages
+
+```{r packages, message = FALSE}
+library(magrittr); library(janitor); library(tidyverse)
+## always need tidyverse, often need more
+## place tidyverse last
+```
+
+## Load necessary data
+
+```{r data_load}
+
+```
+
+# Question 1
+
+Begin typing your answer to Question 1 here. Use complete sentences.
+
+# Question 2
+
+Type your answer to Question 2 here. 
+
+and so on...
+
+## Session Information
+
+```{r}
+sessionInfo()
+```
