@@ -17,7 +17,7 @@ library(MASS); library(tidyverse)
 ## always need tidyverse, also need MASS for Deliverable C
 ```
 
-```{r create_hw2_tibble}
+```{r create_hwC_tibble}
 hwC <- tbl_df(faithful)
 hwC
 ```
@@ -28,7 +28,7 @@ Begin typing your answer to Question 1 here. Use complete sentences.
 
 If you need to build some code to answer a question, create a chunk of code like the one below, which looks at eruption times, rather than waiting times, so it's not helpful to us. It's also not very attractive, and not labeled effectively.
 
-```{r q02_histogram}
+```{r q01_histogram}
 ggplot(hwC, aes(x = eruptions)) +
   geom_histogram()
 ```
@@ -80,7 +80,7 @@ Replace this text with your Question 10 answer here.
 
 # Question 11
 
-You'll need to insert a chunk of code here to create the `hw2extra` file, using the suggestion from the instructions.
+You'll need to insert a chunk of code here to create the `hwCextra` file, using the suggestion from the instructions.
 
 Next, you'll need to redo the last three questions.
 
