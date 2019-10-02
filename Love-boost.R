@@ -1,12 +1,11 @@
-## Updated 2018-08-25 dropping old EDA pieces
+## Updated 2019-10-02 dropping require pieces
 
 `bootdif` <-
   function(y, g, conf.level=0.95, B.reps = 2000) {
-    require(Hmisc)
     lowq = (1 - conf.level)/2
     g <- as.factor(g)
-    a <- attr(smean.cl.boot(y[g==levels(g)[1]], B=B.reps, reps=TRUE),'reps')
-    b <- attr(smean.cl.boot(y[g==levels(g)[2]], B=B.reps, reps=TRUE),'reps')
+    a <- attr(Hmisc::smean.cl.boot(y[g==levels(g)[1]], B=B.reps, reps=TRUE),'reps')
+    b <- attr(Hmisc::smean.cl.boot(y[g==levels(g)[2]], B=B.reps, reps=TRUE),'reps')
     meandif <- diff(tapply(y, g, mean, na.rm=TRUE))
     a.b <- quantile(b-a, c(lowq,1-lowq))
     res <- c(meandif, a.b)
@@ -32,7 +31,7 @@
   res.exp <- c(0.68, 0.95, 0.997, 1)
   res <- data.frame(count = res.count, proportion = res.prop)
   row.names(res) <- c("Mean +/- 1 SD", "Mean +/- 2 SD", "Mean +/- 3 SD", "Entire Data Set")
-  return(pander::pander(res))
+  return(res)
   rm(tmp.overall_n, tmp.mean, tmp.sd, tmp.in1sd, tmp.in2sd, tmp.in3sd,
      tmp.prop1sd, tmp.prop2sd, tmp.prop3sd, res.count, res.prop, res)
 }
@@ -96,53 +95,9 @@ qq_slope <- function(tempdat, na.rm = TRUE) {
     # names are then given in order down the rows then across the columns
     # use standard epidemiological format - outcomes in columns, treatments in rows
   {
-    require(Epi)
     .Table <- matrix(c(a, b, c, d), 2, 2, byrow=T, dimnames=list(c(namer1, namer2), c(namec1, namec2)))
-    twoby2(.Table, alpha = 1 - conf.level)
+    Epi::twoby2(.Table, alpha = 1 - conf.level)
   }
-
-## Code from https://gist.github.com/rentrop/d39a8406ad8af2a1066c
-## Slightly modified by T. Love
-
-gg_qq <- function(x, distribution = "norm", ..., line.estimate = NULL, conf = 0.95,
-                  labels = names(x)){
-  q.function <- eval(parse(text = paste0("q", distribution)))
-  d.function <- eval(parse(text = paste0("d", distribution)))
-  x <- na.omit(x)
-  ord <- order(x)
-  n <- length(x)
-  P <- ppoints(length(x))
-  df <- data.frame(ord.x = x[ord], z = q.function(P, ...))
-  
-  if(is.null(line.estimate)){
-    Q.x <- quantile(df$ord.x, c(0.25, 0.75))
-    Q.z <- q.function(c(0.25, 0.75), ...)
-    b <- diff(Q.x)/diff(Q.z)
-    coef <- c(Q.x[1] - b * Q.z[1], b)
-  } else {
-    coef <- coef(line.estimate(ord.x ~ z))
-  }
-  
-  zz <- qnorm(1 - (1 - conf)/2)
-  SE <- (coef[2]/d.function(df$z)) * sqrt(P * (1 - P)/n)
-  fit.value <- coef[1] + coef[2] * df$z
-  df$upper <- fit.value + zz * SE
-  df$lower <- fit.value - zz * SE
-  
-  if(!is.null(labels)){ 
-    df$label <- ifelse(df$ord.x > df$upper | df$ord.x < df$lower, labels[ord],"")
-  }
-  
-  p <- ggplot(df, aes(x=z, y=ord.x)) +
-    geom_point() + 
-    geom_abline(intercept = coef[1], slope = coef[2], color="red") +
-    geom_ribbon(aes(ymin = lower, ymax = upper), alpha=0.2) +
-    labs(y = "Ordered Sample Data", x = "Standard Normal Quantiles")
-  if(!is.null(labels)) p <- p + geom_text( aes(label = label))
-  print(p)
-  # coef ## can print 25th and 75h percentiles if desired by removing the single # in this line
-}
-
 
 # Code from Gelman and Carlin
 
