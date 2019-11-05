@@ -1,0 +1,68 @@
+subject,Q001,Q002,Q003,Q004,Q005,Q006,Q007,Q008,Q009,Q010,Q011,Q012,Q013,Q014,Q015
+R-01,Yes,Yes,No,Yes,No,No,Yes,1995,Very Good,3,69,165,80,0,9
+R-02,No,No,Yes,No,Yes,Yes,No,1986,Excellent,22,68,164,60,0,7
+R-03,Yes,Yes,Yes,Yes,Yes,No,No,1993,Excellent,16,68,161,76,5,7.75
+R-04,Yes,Yes,No,Yes,Yes,No,No,1996,Very Good,14,68,120,60,2,7
+R-05,Yes,Yes,No,Yes,No,Yes,No,1980,Very Good,60,67,140,80,0,8
+R-06,Yes,Yes,No,No,No,Yes,No,1983,Excellent,28,67,170,56,5,7.75
+R-07,No,Yes,Yes,Yes,No,No,No,1994,Fair,72,61,150,88,0,6
+R-08,No,Yes,No,No,Yes,No,No,1999,Very Good,20,70,170,72,2,9
+R-09,No,No,No,No,No,Yes,No,1984,Very Good,60,71,160,70,5,6
+R-10,No,No,Yes,Yes,No,Yes,No,1989,Good,3,64,112,67,1,6
+R-11,Yes,Yes,Yes,Yes,No,Yes,No,1988,Very Good,4,66,163,60,1,7
+R-12,Yes,Yes,No,Yes,Yes,Yes,Yes,1992,Very Good,15,71,170,75,2,7
+R-13,Yes,Yes,No,Yes,Yes,Yes,No,1992,Very Good,34,77,189,74,4,9
+R-14,No,Yes,No,Yes,Yes,No,No,1996,Very Good,14,70,180,60,1,0
+R-15,No,No,No,No,Yes,Yes,Yes,1995,Fair,26,72,150,104,2,7
+R-16,Yes,Yes,Yes,Yes,Yes,No,No,1996,Very Good,15,66,135,76,3,8
+R-17,Yes,Yes,No,Yes,No,No,No,1994,Excellent,226,72,165,68,3,8
+R-18,Yes,Yes,No,Yes,Yes,No,No,1996,Very Good,15,69,140,76,3,8
+R-19,No,No,Yes,Yes,Yes,No,No,1994,Fair,3,65,121,80,1,6
+R-20,Yes,Yes,No,Yes,No,Yes,No,1987,Excellent,28,71,162,70,3,8
+R-21,Yes,Yes,Yes,Yes,Yes,No,No,1994,Very Good,28,64,120,80,0,7
+R-22,No,No,No,No,No,No,No,1994,Excellent,3,70,143,68,3,8
+R-23,Yes,Yes,No,Yes,No,No,No,1996,Very Good,46,71,175,51,0,10.75
+R-24,Yes,Yes,No,Yes,No,No,No,1991,Very Good,108,75,175,60,4,5
+R-25,Yes,Yes,Yes,No,No,Yes,No,1993,Excellent,27,70,165,62,4,7
+R-26,Yes,Yes,Yes,Yes,Yes,No,No,1991,Good,110,67,150,73,0,6
+R-27,Yes,Yes,Yes,Yes,No,No,No,1998,Good,38,61,135,68,1,7
+R-28,No,No,Yes,Yes,No,Yes,No,1991,Excellent,50,64,128,60,6,7
+R-29,Yes,Yes,No,No,Yes,Yes,No,1985,Very Good,28,67,159,72,1,6
+R-30,Yes,Yes,Yes,No,No,Yes,Yes,1991,Very Good,80,66,123,80,1,8
+R-31,Yes,Yes,No,Yes,Yes,Yes,No,1993,Good,316,78,260,92,0,4
+R-32,Yes,Yes,No,Yes,Yes,Yes,No,1996,Very Good,264,71,165,68,1,8
+R-33,No,No,No,No,No,Yes,No,1988,Excellent,51,66,150,72,1,7
+R-34,No,Yes,Yes,Yes,Yes,No,No,1993,Excellent,120,60,115,80,3,7
+R-35,Yes,Yes,Yes,Yes,Yes,No,No,1997,Excellent,3,63,120,72,3,6
+R-36,Yes,Yes,Yes,Yes,Yes,No,No,1996,Good,5,66,150,80,2,5
+R-37,No,No,Yes,Yes,Yes,No,No,1993,Very Good,2,68,126,80,2,8
+R-38,Yes,Yes,Yes,Yes,Yes,Yes,No,1996,Good,276,64,126,66,2,8
+R-39,Yes,Yes,No,Yes,No,Yes,No,1992,Very Good,252,69,160,72,5,8
+R-40,Yes,Yes,No,Yes,Yes,No,No,1994,Excellent,72,71,145,47,6,10
+R-41,Yes,Yes,No,Yes,Yes,No,No,1999,Excellent,19,68,160,56,6,7
+R-42,No,No,No,Yes,No,No,No,1985,Poor,12,73,200,76,0,9
+R-43,Yes,Yes,No,Yes,Yes,No,No,1980,Fair,2,69,190,96,0,4
+R-44,Yes,No,Yes,Yes,No,No,No,1989,Very Good,2,62,118,56,2,6
+R-45,No,No,No,Yes,Yes,No,No,1992,Very Good,28,69,132,84,0,9
+R-46,Yes,Yes,Yes,Yes,No,No,No,1999,Good,3,68,200,65,5,0
+R-47,Yes,Yes,No,No,No,No,No,1988,Excellent,30,68,165,64,3,5
+R-48,Yes,Yes,Yes,No,No,No,No,1997,Excellent,50,68,155,66,3,9
+R-49,No,No,No,No,Yes,Yes,Yes,1985,Very Good,20,70,245,76,3,8
+R-50,No,No,Yes,Yes,Yes,No,No,1995,Very Good,2,69,134,76,2,7.5
+R-51,No,No,Yes,No,Yes,Yes,No,1975,Very Good,26,68,143,68,2,7
+R-52,Yes,Yes,Yes,No,No,No,No,1993,Very Good,240,62,123,92,2,7.5
+R-53,No,No,Yes,Yes,Yes,Yes,Yes,1969,Good,70,68,195,70,2,5
+R-54,Yes,Yes,Yes,Yes,Yes,Yes,Yes,1993,Excellent,98,70,155,68,5,5
+R-55,No,No,No,Yes,No,Yes,Yes,1993,Good,3,70,223,63,2,7
+R-56,No,No,No,Yes,Yes,Yes,No,1983,Very Good,50,69,218,75,2,7
+R-57,Yes,Yes,Yes,Yes,Yes,No,No,1995,Good,15,67,145,72,3,8
+R-58,No,Yes,Yes,Yes,Yes,No,No,1994,Very Good,171,61,102,72,2,9
+R-59,No,No,Yes,Yes,Yes,Yes,No,1984,Very Good,45,57,110,80,2,7.5
+R-60,Yes,Yes,Yes,No,No,No,No,1992,Excellent,282,68,185,64,1,7
+R-61,No,No,No,No,Yes,No,Yes,1991,Very Good,22,72,167,72,0,8
+R-62,Yes,Yes,Yes,Yes,No,No,No,1998,Very Good,38,63,140,73,2,7
+R-63,Yes,Yes,Yes,Yes,Yes,No,No,1995,Good,16,66,165,78,2,6
+R-64,Yes,Yes,Yes,Yes,Yes,Yes,No,1987,Very Good,4,65,126,72,1,8
+R-65,Yes,Yes,No,Yes,No,Yes,No,1994,Very Good,5,71,185,68,3,6
+R-66,Yes,Yes,Yes,No,Yes,No,No,1998,Very Good,29,64,148,60,6,7
+R-67,Yes,Yes,No,Yes,Yes,Yes,No,1995,Excellent,3,58,155,62,3,9
